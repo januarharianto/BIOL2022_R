@@ -11,7 +11,8 @@
 # environment for use in BEDA. 
 
 pkgs <- c("tidyverse", "tidymodels", "palmerpenguins", "rmarkdown", "quarto", 
-          "shiny", "learnr")
+          "shiny", "learnr", "patchwork", "cowplot", "gganimate")
+
 
 # Install:
 install.packages(pkgs)
