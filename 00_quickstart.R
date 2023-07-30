@@ -10,7 +10,8 @@
 # This script can be used with RStudio/Posit Cloud to quickly set up your 
 # environment for use in BEDA. 
 
-pkgs <- c("tidyverse", "tidymodels", "palmerpenguins", "rmarkdown", "quarto")
+pkgs <- c("tidyverse", "tidymodels", "palmerpenguins", "rmarkdown", "quarto", 
+          "shiny", "learnr")
 
 # Install:
 install.packages(pkgs)
