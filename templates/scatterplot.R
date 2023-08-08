@@ -22,7 +22,6 @@ df <- data.frame(
 
 
 # Plot the data
-library(ggplot2)
 p1 <- ggplot(df, aes(x, y)) +
     geom_point() +
     geom_smooth(method = "lm") +

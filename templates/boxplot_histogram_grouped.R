@@ -12,13 +12,13 @@ library(readxl)
 set.seed(1206)
 group1 <- rnorm(100, mean = 5, sd = 2)
 group2 <- rnorm(100, mean = 7, sd = 2)
-# ==============================================
-
 # Combine data into a data frame
 df <- data.frame(
     value = c(group1, group2),
     group = rep(c("Group 1", "Group 2"), each = 100)
 )
+# ==============================================
+
 
 # Create histogram using ggplot2
 ggplot(df, aes(x = value, fill = group)) +

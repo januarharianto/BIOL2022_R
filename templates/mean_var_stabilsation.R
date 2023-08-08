@@ -22,8 +22,6 @@ df <- tibble(x = sample_sizes, means, vars) |>
 
 
 # Plot means
-library(ggplot2)
-library(patchwork)
 p1 <-
     ggplot(df, aes(x, means)) +
     geom_line() +
@@ -31,6 +29,7 @@ p1 <-
     ggtitle("Mean stabilisation") +
     theme_bw()
 
+# Plot vars
 p2 <-
     ggplot(df, aes(x, vars)) +
     geom_line() +
